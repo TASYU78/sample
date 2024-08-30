@@ -1,0 +1,49 @@
+h1{
+    color: purple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color: rgb(91, 9, 167);
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.3);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    display: inline-block;
+    
+}
+
+div{
+    display: inline-block;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100;
+}
+
+.text-block {
+    display: inline-block;
+    width: 48%; /* 每个块占据48%的宽度，留出4%用于间隙 */
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    max-height: 500px; /* 限定高度为300px */
+    overflow-y: auto; /* 内容超出高度时显示滚动条 */
+}
+
+.original {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.translation {
+    background-color: #e9f7ef;
+    border: 1px solid #ccc;
+}
