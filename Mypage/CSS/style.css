@@ -47,3 +47,64 @@ div{
     background-color: #e9f7ef;
     border: 1px solid #ccc;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* 确保html和body都占满整个页面高度 */
+  }
+  
+  body::before {
+      content: "";
+      position: fixed; /* 改为fixed，让背景固定在页面上 */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* 让背景覆盖整个页面内容 */
+      background-image: url('../pics/reol1.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.5; /* 这里设置图片透明度 */
+      z-index: -1; /* 确保背景图片位于内容后面 */
+      filter: blur(3px);
+  }
+  
+nav a{
+    text-decoration: none;
+    color: #f8f9fa; /* 设置链接颜色 */
+    padding: 10px 20px; /* 增加内边距，扩展点击区域 */
+    display: block; /* 将链接设置为块级元素，便于调整大小 */
+    font-family: 'Arial', sans-serif; /* 使用更现代的字体 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 添加平滑过渡效果 */
+}
+nav a:active {
+    transform: scale(0.95); /* 点击时稍微缩小 */
+}
+nav a:hover {
+    background-color: #9370DB; /* 悬停时改变背景色 */
+    color: #fff; /* 悬停时改变文字颜色 */
+}
+
+nav li{
+    background-color: pink;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around; /* 改为均匀分布 */
+    align-items: center; /* 垂直居中 */
+    padding: 10px; /* 添加内边距 */
+    margin: 0; /* 移除外边距 */
+    border-radius: 10px; /* 给整个导航栏添加圆角 */
+    background-color:  #7c2ab6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+}
+
+.current{
+    text-transform: uppercase;
+    background-color: #6A5ACD;
+    font-weight: bold; /* 加粗当前页面的文字 */
+    color: white; /* 改变文字颜色 */
+}
